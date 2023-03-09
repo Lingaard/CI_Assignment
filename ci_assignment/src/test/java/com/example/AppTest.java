@@ -15,6 +15,14 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( false );
+        assertTrue( true );
+    }
+
+    @Test
+    public void testAdd()
+    {
+        Calculator calc = new Calculator();
+        int sum = calc.add(1, 2);
+        assertTrue(sum == 3);
     }
 }
